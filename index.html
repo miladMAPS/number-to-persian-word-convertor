@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Number to Persian Word Convertor</title>
+    <link
+      href="https://cdn.fontcdn.ir/Font/Persian/Nazanin/Nazanin.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      h1,
+      h2 {
+        font-family: arial;
+      }
+
+      input {
+        font-size: 1rem;
+        color: #495057;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        width: 50%;
+        margin-top: 30px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      input[type='number']::-webkit-inner-spin-button,
+      input[type='number']::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      input[type='number'] {
+        -moz-appearance: textfield;
+      }
+
+      .output {
+        font-family: 'Nazanin';
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+
+      input,
+      .output {
+        font-weight: 600;
+        padding: 0 15px;
+        border-radius: 10px;
+        height: 55px;
+        border: 2px solid #277d24;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Number to Persian Word Converter</h1>
+    <input type="number" placeholder="Give me a number..." />
+    <h2>The result is:</h2>
+    <p class="output"></p>
+    <script src="Number-to-Persian-Word.js"></script>
+  </body>
+</html>
